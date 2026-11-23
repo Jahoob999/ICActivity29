@@ -102,5 +102,13 @@ int main(){
 for(int i = 0; i < 11; i++){
     printf("%f transformed into: %f\n",input[i],output[i]);
 }
+    sem_close(p1);
+    sem_close(p2);
+    sem_unlink(SEM_NAME1);
+    sem_unlink(SEM_NAME2);
+    munmap(buffer1, sizeof(double));
+    munmap(buffer2, sizeof(double));
+    munmap(buffer_output, sizeof(double));
+
     return 0;
 }
