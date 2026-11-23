@@ -29,10 +29,10 @@ int main(){
     
     int count1 = 0;     //controls output index
     int count2 = 0;     //controls input index
-    int x = 0;
+    float x = 0;
 
 
-    int input[11] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    float input[11] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     float output[11];
 
    while(count1<11){
@@ -100,7 +100,7 @@ int main(){
     }
 }
 for(int i = 0; i < 11; i++){
-    printf("%d transformed into: %f\n",input[i],output[i]);
+    printf("%f transformed into: %f\n",input[i],output[i]);
 }
     return 0;
 }
